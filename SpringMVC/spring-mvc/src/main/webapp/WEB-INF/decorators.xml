@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+
+	<!-- spring mvc sd nhieu requestMapping hon nen phai tong quat url
+		all cac url k start /quan-tri thi apply giao dien web -->
+    <decorator name="web" page="web.jsp">
+       <pattern>/*</pattern>
+    </decorator>
+    
+    <decorator name="admin" page="admin.jsp">
+       <pattern>/quan-tri*</pattern>
+    </decorator>
+
+	<decorator name="login" page="login.jsp">
+        <pattern>/dang-nhap</pattern>
+    </decorator>
+</decorators>
